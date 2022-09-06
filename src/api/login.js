@@ -1,7 +1,8 @@
 import request from '@/utils/requrest.js'
 export const login = (data) => {
   return request({
-    url: '/app/v1_0/authorizations',
-    Method: 'POST'
+    url: '/v1_0/authorizations',
+    method: 'POST',
+    data
   })
 }
