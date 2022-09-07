@@ -6,3 +6,14 @@ export const login = (data) => {
     data
   })
 }
+/**
+ *
+ * @param {手机号} mobile
+ * @returns
+ */
+export const sendSms = (mobile) => {
+  return request({
+    url: `/v1_0/sms/codes/${mobile}`,
+    method: 'GET'
+  })
+}
